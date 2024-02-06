@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-col">
           <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm{' '}
+            Hi, I'm
             <span className="text-primary-purple">
               <TypeAnimatedText />
             </span>

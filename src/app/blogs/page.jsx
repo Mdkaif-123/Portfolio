@@ -59,7 +59,7 @@ function Page() {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove)
     }
-  }, [currentItem])
+  }, [currentItem, isHovering])
   return (
     <section className={`${styles.padding} mx-auto max-w-7xl pt-20`}>
       <div className="border-b border-b-gray-200 pb-10">

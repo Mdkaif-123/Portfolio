@@ -44,7 +44,7 @@ const ComputerCanvas = () => {
     return () => {
       media.removeEventListener('change', handleIsMediaChanged)
     }
-  }, [])
+  }, [isMobile])
   return (
     <Canvas
       shadows
