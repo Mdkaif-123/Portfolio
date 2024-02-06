@@ -3,7 +3,7 @@ import { Blogs } from '@/constants'
 import { capitalizeFirstLetter, cn } from '@/lib/utils'
 import { styles } from '@/styles/style'
 
-function page({ params }) {
+function Page({ params }) {
   const blogId = params.id
 
   const blog = Blogs.reduce((item) => blogId === item.id)
@@ -33,4 +33,4 @@ function page({ params }) {
   )
 }
 
-export default page
+export default Page

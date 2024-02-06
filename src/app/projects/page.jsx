@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { motion } from 'framer-motion'
 
-function page() {
+function Page() {
   const PARENT_VARIANT = {
     hidden: {
       opacity: 0,
@@ -106,4 +106,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

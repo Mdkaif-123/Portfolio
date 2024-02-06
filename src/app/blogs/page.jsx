@@ -6,7 +6,7 @@ import SectionCard from '@/components/shared/SectionCard'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
-function page() {
+function Page() {
   const PARENT_VARIANT = {
     hidden: {
       opacity: 0,
@@ -106,4 +106,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
