@@ -35,7 +35,7 @@ const ComputerCanvas = () => {
   useEffect(() => {
     const media = window.matchMedia('(max-width: 500px)')
     setIsMobile(media.matches)
-    console.log(isMobile)
+    console.log('Computer', isMobile)
     const handleIsMediaChanged = (event) => {
       setIsMobile(event.matches)
     }

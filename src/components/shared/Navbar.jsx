@@ -54,7 +54,8 @@ const Navbar = () => {
       <Link href={`/`}>
         <div className="flex gap-x-3 items-center">
           <span className="text-white font-poppins font-semibold">
-            Kaif <span className="text-primary-purple">Ansari</span>
+            <FadeImg className="w-32" src="./logo2.png" />
+            {/* Kaif <span className="text-primary-purple">Ansari</span> */}
           </span>
         </div>
       </Link>
