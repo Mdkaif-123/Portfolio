@@ -60,7 +60,7 @@ function Page() {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove)
     }
-  }, [currentItem])
+  }, [currentItem, isHovering])
   return (
     <section className={`${styles.padding} mx-auto max-w-7xl pt-20`}>
       <div className="border-b border-b-gray-200 pb-10">
@@ -68,7 +68,7 @@ function Page() {
           Projects
         </h1>
         <p className={`text-sm text-white-100 font-normal tracking-wide my-1`}>
-          Unveiling the Technological Wonders I've Forged.
+          Unveiling the Technological Wonders I&apos;ve Forged.
         </p>
       </div>
       <div>
