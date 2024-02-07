@@ -69,7 +69,7 @@ const ResumeViewButton = () => {
     <Link target="_blank" href={`${RESUME_URL}`}>
       <div className="relative w-48 mt-7 flex justify-center items-center cursor-pointer">
         <FadeImg
-          className="w-44 h-44 relative animate-spin-slow rounded-full -ml-5"
+          className="w-36 h-36 relative animate-spin-slow rounded-full -ml-5"
           src="./assets/text-animate.png"
         />
         <div className="w-10 h-10 bg-white rounded-full absolute -ml-2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-7 text-black">
