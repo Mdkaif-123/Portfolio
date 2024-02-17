@@ -49,7 +49,7 @@ export const navLinks = [
   },
   {
     id: 'contact',
-    href: '#contact',
+    href: '/#contact',
     title: 'Contact',
   },
 ]
@@ -155,6 +155,7 @@ const experiences = [
     title: 'Backend developer',
     company_name: 'Namlsoft',
     icon: './assets/namlsoftLogo.png',
+    companyWebsite: 'https://namlsoft.com/',
     iconBg: '#f6f6f6',
     date: 'June 2023 - October 2023',
     points: [
@@ -172,6 +173,7 @@ const experiences = [
     company_name: 'OptiwiseIT',
     icon: './assets/optiwiseLogo.png',
     iconBg: '#181c21',
+    companyWebsite: 'https://optiwiseit.com/',
     date: 'Oct 2023 - Present',
     points: [
       `Enhanced ListingInk Backend: Led microservices development using Azure,
@@ -203,7 +205,7 @@ const projects = [
     ],
     hoverImage:
       'https://plus.unsplash.com/premium_photo-1683402693577-035defb30159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRocmVhZHMlMjBhcHB8ZW58MHx8MHx8fDA%3D',
-    source_code_link: 'https://github.com/Mdkaif-123/Thread-Clone',
+    source_code_link: 'https://thread-clone-mauve.vercel.app/',
   },
   {
     title: 'AI Scribe',
@@ -223,7 +225,7 @@ const projects = [
     ],
     hoverImage:
       'https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFpJTIwYXBwfGVufDB8fDB8fHww',
-    source_code_link: 'https://github.com/Mdkaif-123/AI-Scribe',
+    source_code_link: 'https://aiscribe-v7me.onrender.com/',
   },
   {
     title: 'Word Waves',
@@ -243,7 +245,7 @@ const projects = [
     ],
     hoverImage:
       'https://images.unsplash.com/photo-1542435503-956c469947f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZyUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D',
-    source_code_link: 'https://github.com/Mdkaif-123/Word-Waves',
+    source_code_link: 'https://word-waves.onrender.com/',
   },
   {
     title: 'Task Unity',
@@ -263,7 +265,7 @@ const projects = [
     ],
     hoverImage:
       'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGFzayUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D',
-    source_code_link: 'https://github.com/Mdkaif-123/Task-Unity',
+    source_code_link: 'https://task-unity.onrender.com/admin-login',
   },
   {
     title: 'MD Manager',
@@ -283,7 +285,7 @@ const projects = [
     ],
     hoverImage:
       'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuYWdlbWVudCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D',
-    source_code_link: 'https://github.com/Mdkaif-123/MD-Manager',
+    source_code_link: 'https://md-manager.onrender.com/Login',
   },
 ]
 

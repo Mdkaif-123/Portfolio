@@ -10,6 +10,8 @@ import 'react-vertical-timeline-component/style.min.css'
 import FadeImg from '../core/FadeImg'
 import { experiences } from '@/constants'
 import { StarIcon, TargetIcon } from 'lucide-react'
+import { PinContainer } from '../ui/3dpinCard'
+import Link from 'next/link'
 const Experience = () => {
   return (
     <div className="relative mt-12 w-full h-auto">
@@ -48,10 +50,12 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="w-full h-full flex justify-center items-center z-20">
-          <FadeImg
-            className="w-8 h-8 md:w-10 md:h-10 rounded-full"
-            src={experience.icon}
-          />
+          <Link target="_blank" href={experience.companyWebsite}>
+            <FadeImg
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full"
+              src={experience.icon}
+            />
+          </Link>
         </div>
       }
     >

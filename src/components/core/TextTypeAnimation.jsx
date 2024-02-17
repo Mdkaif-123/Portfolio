@@ -14,7 +14,6 @@ const TypeAnimatedText = () => {
     }
 
     media.addEventListener('change', handleIsMediaChanged)
-    console.log('TExt', isMobile)
 
     return () => {
       media.removeEventListener('change', handleIsMediaChanged)
@@ -25,9 +24,9 @@ const TypeAnimatedText = () => {
   const desktopArray = [
     'Kaif',
     1000,
-    'a web developer',
+    'a Web Developer',
     1000,
-    'a content creator',
+    'a Content Maven',
     1000,
   ]
   return (

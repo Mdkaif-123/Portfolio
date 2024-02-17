@@ -62,11 +62,11 @@ function Page() {
   }, [currentItem, isHovering])
   return (
     <section className={`${styles.padding} mx-auto max-w-7xl pt-20`}>
-      <div className="border-b border-b-gray-200 pb-10">
+      <div className="border-b border-b-dark-3 pb-10">
         <h1 className={cn(`${styles.pageHeadText} font-poppins font-bold`)}>
           Blogs
         </h1>
-        <p className={`text-sm text-white-100 font-normal tracking-wide my-1`}>
+        <p className={`text-sm text-secondary font-normal tracking-wide my-1`}>
           Crafting Knowledge Nuggets for All to Discover.
         </p>
       </div>

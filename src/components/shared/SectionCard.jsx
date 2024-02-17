@@ -32,12 +32,15 @@ const SectionCard = ({
   setIsHovering,
 }) => {
   return (
-    <Link href={isBlog ? '/blog/' + project.id : project.source_code_link}>
+    <Link
+      target="_blank"
+      href={isBlog ? '/blog/' + project.id : project.source_code_link}
+    >
       <motion.li
         variants={CARD_VARIANT}
         initial={'hidden'}
         animate={'visible'}
-        className="py-9 border-b border-b-gray-200"
+        className="py-9 border-b border-b-dark-3"
         ref={componentRef}
         onMouseEnter={() => (setCurrentItem(index), setIsHovering(true))}
         onMouseLeave={() => setIsHovering(false)}
