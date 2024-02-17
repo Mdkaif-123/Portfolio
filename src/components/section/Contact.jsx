@@ -1,6 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
-import SectionWrapper from '../hoc/SectionWrapper'
+import React from 'react'
 import { styles } from '@/styles/style'
 import { motion } from 'framer-motion'
 import { slideIn, staggerContainer } from '@/lib/motion'
@@ -16,7 +15,6 @@ import {
 import { formSchema } from '@/lib/schema/form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { Button } from '../ui/button'
 import Earth from '../canvas/Earth'
 import { StarsCanvas } from '../canvas'
 import { Input } from '../ui/input'
@@ -75,7 +73,7 @@ const FormInputSection = () => {
     console.log('sending')
     toast.promise(sendMail(values), {
       loading: 'Sending...',
-      success: <p>Message received, code executed. We're on it!</p>,
+      success: <p>Message received, code executed. We&apos;re on it!</p>,
       error: <p>Some error occured, Try again !</p>,
     })
 
