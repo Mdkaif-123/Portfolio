@@ -49,7 +49,8 @@ const SectionCard = ({
               {project.title}
             </h4>
             <div className="flex gap-3 mt-1">
-              {project.tags.length > 0 &&
+              {project.tags &&
+                project.tags.length > 0 &&
                 project.tags.map((tag, index) => (
                   <span
                     key={'tag' + index}

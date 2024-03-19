@@ -6,9 +6,7 @@ import { styles } from '@/styles/style'
 
 function Page({ params }) {
   const blogId = params.id.toString()
-  console.log(blogId)
   const blog = Blogs.find((item) => blogId === item.id)
-  console.log(blog)
   if (!blog) return null
   return (
     <section className={`${styles.padding} mx-auto max-w-7xl pt-20 md:pt-24`}>
