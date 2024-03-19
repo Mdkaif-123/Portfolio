@@ -420,7 +420,7 @@ export const Blogs = [
       },
     ],
     hoverImage:
-      'https://images.unsplash.com/photo-1502465771179-51f3535da42c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJsb2dzfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGd1aWRlfGVufDB8fDB8fHww',
     blogImage:
       'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqjsncxo0yl7e3bp6nmk9.png',
   },

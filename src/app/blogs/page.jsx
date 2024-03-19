@@ -95,9 +95,10 @@ function Page() {
       {/* Motion Image  */}
       <div
         ref={revealRef}
-        className="pointer-events-none absolute left-0 top-0 -z-10 h-[320px] w-[220px] rounded-lg bg-center duration-300 object-cover"
+        className="pointer-events-none absolute left-0 top-0 -z-10 h-[320px] w-[220px] rounded-lg bg-center duration-300 object-fill"
         style={{
           background: `url(${currentImage[currentItem]})`,
+          backgroundImage: 'inherit',
         }}
       >
         {/* <div className="w-full h-full bg-[#02020256]"></div> */}
