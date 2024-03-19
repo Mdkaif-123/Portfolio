@@ -5,9 +5,10 @@ import { capitalizeFirstLetter, cn } from '@/lib/utils'
 import { styles } from '@/styles/style'
 
 function Page({ params }) {
-  const blogId = params.id
-
-  const blog = Blogs.reduce((item) => blogId === item.id)
+  const blogId = params.id.toString()
+  console.log(blogId)
+  const blog = Blogs.find((item) => blogId === item.id)
+  console.log(blog)
   if (!blog) return null
   return (
     <section className={`${styles.padding} mx-auto max-w-7xl pt-20 md:pt-24`}>
@@ -16,14 +17,15 @@ function Page({ params }) {
         <h1 className={cn(`${styles.pageHeadText} font-poppins font-bold`)}>
           {blog.title}
         </h1>
-        {blog.tags.map((tag, index) => (
-          <span
-            key={'tag' + index}
-            className="text-sm text-primary-purple font-medium mx-2"
-          >
-            {capitalizeFirstLetter(tag.name)}
-          </span>
-        ))}
+        {blog.tags &&
+          blog.tags.map((tag, index) => (
+            <span
+              key={'tag' + index}
+              className="text-sm text-primary-purple font-medium mx-2"
+            >
+              {capitalizeFirstLetter(tag.name)}
+            </span>
+          ))}
       </div>
       <SparkleSpaceEffect />
       <div className="relative -top-20 max-w-3xl mx-auto">

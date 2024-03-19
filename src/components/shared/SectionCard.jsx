@@ -1,10 +1,8 @@
 'use client'
 import { capitalizeFirstLetter } from '@/lib/utils'
+import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
-import { motion, spring } from 'framer-motion'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
-// import { useRef } from 'react'
 
 const CARD_VARIANT = {
   hidden: {
@@ -33,7 +31,7 @@ const SectionCard = ({
 }) => {
   return (
     <Link
-      target="_blank"
+      target={!isBlog ? '_blank' : '_self'}
       href={isBlog ? '/blog/' + project.id : project.source_code_link}
     >
       <motion.li
@@ -51,14 +49,15 @@ const SectionCard = ({
               {project.title}
             </h4>
             <div className="flex gap-3 mt-1">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={'tag' + index}
-                  className="text-sm text-primary-purple font-medium"
-                >
-                  {capitalizeFirstLetter(tag.name)}
-                </span>
-              ))}
+              {project.tags.length > 0 &&
+                project.tags.map((tag, index) => (
+                  <span
+                    key={'tag' + index}
+                    className="text-sm text-primary-purple font-medium"
+                  >
+                    {capitalizeFirstLetter(tag.name)}
+                  </span>
+                ))}
             </div>
           </div>
           <div className="flex gap-2">

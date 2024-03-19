@@ -12,6 +12,7 @@ import { experiences } from '@/constants'
 import { StarIcon, TargetIcon } from 'lucide-react'
 import { PinContainer } from '../ui/3dpinCard'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
 const Experience = () => {
   return (
     <div className="relative mt-12 w-full h-auto">
@@ -52,7 +53,10 @@ const ExperienceCard = ({ experience }) => {
         <div className="w-full h-full flex justify-center items-center z-20">
           <Link target="_blank" href={experience.companyWebsite}>
             <FadeImg
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full"
+              className={cn(
+                'w-8 h-8 md:w-10 md:h-10 rounded-full',
+                experience.className && experience.className
+              )}
               src={experience.icon}
             />
           </Link>

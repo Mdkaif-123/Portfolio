@@ -16,7 +16,7 @@ import javascript from './tech/javascript.png'
 import mongodb from './tech/mongodb.png'
 import nodejs from './tech/nodejs.png'
 import reactjs from './tech/reactjs.png'
-import redux from './tech/redux.png'
+import reactQuery from './tech/react-query.svg'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
@@ -26,11 +26,11 @@ import meta from './company/meta.png'
 import shopify from './company/shopify.png'
 import starbucks from './company/starbucks.png'
 import tesla from './company/tesla.png'
-
+import zudstand from './tech/zudstand.png'
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
-
+import azure from './tech/azure.png'
 import namlsoftLogo from './namlsoftLogo.png'
 import optiwiseITLogo from './optiwiseLogo.png'
 export {
@@ -45,13 +45,14 @@ export {
   css,
   docker,
   figma,
+  azure,
   git,
   html,
   javascript,
   mongodb,
   nodejs,
+  zudstand,
   reactjs,
-  redux,
   tailwind,
   typescript,
   threejs,
@@ -62,6 +63,7 @@ export {
   nextJs,
   framerMotion,
   carrent,
+  reactQuery,
   jobit,
   tripguide,
   namlsoftLogo,

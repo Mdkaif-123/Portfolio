@@ -24,6 +24,7 @@ const Ball = ({ icon }) => {
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
+          color={'#4e5577'}
         />
         <Decal
           position={[0, 0, 1]}
